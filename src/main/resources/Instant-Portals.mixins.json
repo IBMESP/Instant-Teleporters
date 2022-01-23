@@ -4,6 +4,7 @@
   "package": "me.ibmesp.portals.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ExampleMixin"
   ],
   "client": [
   ],
