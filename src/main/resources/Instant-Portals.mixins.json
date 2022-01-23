@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "instantportals.instantportals.mixin",
+  "package": "me.ibmesp.portals.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],

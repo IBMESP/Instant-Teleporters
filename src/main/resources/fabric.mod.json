@@ -13,10 +13,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "me.ibmesp.instantportals.portals.client.PortalsModClient"
+      "me.ibmesp.portals.client.PortalsModClient"
     ],
     "main": [
-      "me.ibmesp.instantportals.portals.PortalsMod"
+      "me.ibmesp.portals.PortalsMod"
     ]
   },
   "mixins": [

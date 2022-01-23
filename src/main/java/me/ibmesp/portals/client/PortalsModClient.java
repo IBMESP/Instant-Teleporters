@@ -1,4 +1,4 @@
-package me.ibmesp.instantportals.portals.client;
+package me.ibmesp.portals.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;

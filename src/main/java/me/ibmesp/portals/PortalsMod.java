@@ -1,6 +1,6 @@
-package me.ibmesp.instantportals.portals;
+package me.ibmesp.portals;
 
-import me.ibmesp.instantportals.portals.item.ModItems;
+import me.ibmesp.portals.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import java.util.logging.LogManager;

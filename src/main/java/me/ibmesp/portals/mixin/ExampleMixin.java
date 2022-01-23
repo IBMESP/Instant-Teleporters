@@ -1,4 +1,4 @@
-package me.ibmesp.instantportals.portals.mixin;
+package me.ibmesp.portals.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

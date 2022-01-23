@@ -1,6 +1,6 @@
-package me.ibmesp.instantportals.portals.item;
+package me.ibmesp.portals.item;
 
-import me.ibmesp.instantportals.portals.PortalsMod;
+import me.ibmesp.portals.PortalsMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
