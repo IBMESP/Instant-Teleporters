@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GDG",
+    "GOG",
+    "GDG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "portals:ore"
+    }
+  },
+  "result": {
+    "item": "portals:nether_tp"
+  }
+}

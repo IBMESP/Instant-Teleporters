@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "portals",
+  "version": "${version}",
+  "name": "Instant Portals",
+  "description": "",
+  "authors": [
+    "IBM_ESP"
+  ],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/portals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.ibmesp.instantportals.portals.client.PortalsModClient"
+    ],
+    "main": [
+      "me.ibmesp.instantportals.portals.PortalsMod"
+    ]
+  },
+  "mixins": [
+    "Instant-Portals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.11",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
