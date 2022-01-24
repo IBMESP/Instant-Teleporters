@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 public class PortalsMod implements ModInitializer {
     public static final String MOD_ID = "portals";
-    public static final Logger LOGGER = LogManager.getLogManager().getLogger(MOD_ID);
+    //public static final Logger LOGGER = LogManager.getLogManager().getLogger(MOD_ID);
 
     @Override
     public void onInitialize() {
