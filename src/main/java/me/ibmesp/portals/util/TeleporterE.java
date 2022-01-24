@@ -42,11 +42,11 @@ public class TeleporterE {
                 // play sound in origin world
                 entity.world.playSound(null, entity.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 1, 1);
                 if (entity instanceof ServerPlayerEntity) {
-                    ((ServerPlayerEntity) entity).teleport(serverWorld, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 1, 1);
+                    ((ServerPlayerEntity) entity).teleport(serverWorld, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, entity.getYaw(), entity.getPitch());
                 } else {
                     //server.getWorld(entity.world.getRegistryKey()).removeEntity(entity);
                     //entity.removed = false;
-                    entity.refreshPositionAndAngles(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, 1, 1);
+                    entity.refreshPositionAndAngles(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, entity.getYaw(), entity.getPitch());
                     //entity.setWorld(serverWorld);
                     serverWorld.spawnEntity(entity);
                 }
