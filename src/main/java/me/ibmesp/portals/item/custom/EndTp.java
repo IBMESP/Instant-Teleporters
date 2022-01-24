@@ -1,5 +1,6 @@
 package me.ibmesp.portals.item.custom;
 
+import me.ibmesp.portals.util.TeleporterE;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,8 @@ public class EndTp extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        TeleporterE.teleport(user);
+        user.getItemCooldownManager().set(this, 20);
         return super.use(world, user, hand);
     }
 }
