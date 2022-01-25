@@ -34,17 +34,15 @@ public class TeleporterE {
             // Get the world of the destination dimension
             ServerWorld serverWorld = server.getWorld(entity.world.getRegistryKey() == World.OVERWORLD ? World.END : World.OVERWORLD);
 
-            if (serverWorld != null && server.isNetherAllowed()) {
+            if (serverWorld != null) {
 
-                // One block in the nether is 8 blocks in the nether.
-                double movementFactor = entity.world.getRegistryKey() == World.OVERWORLD ? 0.125d : 1;
-                BlockPos pos = createDestinationSpawn(new BlockPos(entity.getPos().getX() * movementFactor, entity.getPos().getY(), entity.getPos().getZ() * movementFactor), serverWorld);
+                BlockPos pos = createDestinationSpawn(new BlockPos(entity.getPos().getX(), entity.getPos().getY(), entity.getPos().getZ()), serverWorld);
                 // play sound in origin world
                 entity.world.playSound(null, entity.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 1, 1);
                 if (entity instanceof ServerPlayerEntity) {
                     ((ServerPlayerEntity) entity).teleport(serverWorld, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, entity.getYaw(), entity.getPitch());
                 } else {
-                    //server.getWorld(entity.world.getRegistryKey()).removeEntity(entity);
+                    server.getWorld(entity.world.getRegistryKey()).removePlayer((ServerPlayerEntity) entity, Entity.RemovalReason.CHANGED_DIMENSION);
                     //entity.removed = false;
                     entity.refreshPositionAndAngles(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, entity.getYaw(), entity.getPitch());
                     //entity.setWorld(serverWorld);

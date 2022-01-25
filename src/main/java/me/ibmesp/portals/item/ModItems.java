@@ -16,7 +16,7 @@ public class ModItems {
     public static final Item END_PORTAL = registerItem("end_tp",
             new EndTp(new FabricItemSettings().group(ItemGroup.REDSTONE).maxCount(1)));
     public static final Item ORE = registerItem("ore",
-            new Item(new FabricItemSettings().group(ItemGroup.REDSTONE)));
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     //Function to make easier the creation of items
     private static Item registerItem(String name, Item item){

@@ -8,7 +8,7 @@
     "IBM_ESP"
   ],
   "contact": {},
-  "license": "unlicense",
+  "license": "MIT",
   "icon": "assets/portals/icon.png",
   "environment": "*",
   "entrypoints": {
