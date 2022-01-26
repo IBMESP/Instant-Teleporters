@@ -5,9 +5,11 @@
   "name": "Instant Portals",
   "description": "",
   "authors": [
-    "IBM_ESP"
+    "Ib"
   ],
-  "contact": {},
+  "contact": {
+    "sources": "https://github.com/IBMESP/Instant-Portals"
+  },
   "license": "MIT",
   "icon": "assets/portals/icon.png",
   "environment": "*",
