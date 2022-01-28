@@ -19,6 +19,8 @@ public class TeleporterN {
      *
      * @param entity The entity to teleport
      */
+
+    //Special thanks to Frieder Hannenheim, he made this code for his mod https://github.com/FriederHannenheim/PortableNetherFabric
     public static void teleport(Entity entity) {
         if (!entity.world.isClient) {
 

@@ -1,4 +1,6 @@
 {
+  "portals.notp": "§cNo puedes usar este objecto en esta dimensión",
+
   "item.portals.end_tp": "End Teleport",
   "item.portals.nether_tp": "Nether Teleport",
   "item.portals.ore": "Mena"
