@@ -1,7 +1,13 @@
 {
+  "portals.debug": "debug",
+
   "portals.notp": "§cYou cant use this item on this dimenision",
+
+  "itemGroup.portals.portals": "Portals Tab",
 
   "item.portals.end_tp": "End Teleport",
   "item.portals.nether_tp": "Nether Teleport",
-  "item.portals.ore": "Ore"
+  "item.portals.zircon": "Zircon",
+
+  "block.portals.zircon_ore" : "Zircon Ore"
 }

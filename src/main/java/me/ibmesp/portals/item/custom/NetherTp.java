@@ -1,6 +1,6 @@
 package me.ibmesp.portals.item.custom;
 
-import me.ibmesp.portals.util.TeleporterN;
+import me.ibmesp.portals.util.Teleporter;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -21,7 +21,7 @@ public class NetherTp extends Item {
         {
             user.sendMessage(new TranslatableText("portals.notp"), false);
         }else {
-            TeleporterN.teleport(user);
+            Teleporter.teleport(user,hand);
         }
         user.getItemCooldownManager().set(this, 20);
         return super.use(world, user, hand);

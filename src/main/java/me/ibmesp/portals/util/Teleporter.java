@@ -1,54 +1,59 @@
 package me.ibmesp.portals.util;
 
+import me.ibmesp.portals.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class TeleporterE {
+public class Teleporter {
     /**
      * Teleports an entity from the overworld to the nether and vice versa
      *
      * @param entity The entity to teleport
      */
-
-    //Special thanks to Frieder Hannenheim, he made this code for his mod https://github.com/FriederHannenheim/PortableNetherFabric
-    public static void teleport(Entity entity) {
+    //Special thanks to Frieder Hannenheim, he made this code for his mod https://github.com/FriederHannenheim/PortableNetherFabric and I modified to fit into my mod
+    public static void teleport(PlayerEntity entity,Hand hand) {
         if (!entity.world.isClient) {
 
             // If the entity is in a vehicle it will get out and if it is being ridden the passenger will be thrown out
             entity.detach();
             entity.setVelocity(Vec3d.ZERO);
             MinecraftServer server = entity.world.getServer();
+            Item item = entity.getStackInHand(hand).getItem();
 
             // I don't think this is ever going to happen this is just here in case it does happen and to suppress the IDE warnings
             if (server == null)
                 return;
 
             // Get the world of the destination dimension
-            ServerWorld serverWorld = server.getWorld(entity.world.getRegistryKey() == World.OVERWORLD ? World.END : World.OVERWORLD);
+            ServerWorld serverWorld = server.getWorld(entity.world.getRegistryKey() == World.OVERWORLD ? World.NETHER : World.OVERWORLD);
 
-            if (serverWorld != null) {
+            if (serverWorld != null && server.isNetherAllowed()) {
 
-                BlockPos pos = createDestinationSpawn(new BlockPos(entity.getPos().getX(), entity.getPos().getY(), entity.getPos().getZ()), serverWorld);
+                double movementFactor = 1;
+                if(item.equals(ModItems.NETHER_PORTAL)) {
+                    // One block in the nether is 8 blocks in the nether.
+                    movementFactor = entity.world.getRegistryKey() == World.OVERWORLD ? 0.125d : 8;
+                }else if (item.equals(ModItems.END_PORTAL)) {
+                    serverWorld = server.getWorld(entity.world.getRegistryKey() == World.OVERWORLD ? World.END : World.OVERWORLD);
+                    }
+                BlockPos pos = createDestinationSpawn(new BlockPos(entity.getPos().getX() * movementFactor, entity.getPos().getY(), entity.getPos().getZ() * movementFactor), serverWorld);
                 // play sound in origin world
                 entity.world.playSound(null, entity.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 1, 1);
                 if (entity instanceof ServerPlayerEntity) {
                     ((ServerPlayerEntity) entity).teleport(serverWorld, pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, entity.getYaw(), entity.getPitch());
-                } else {
-                    server.getWorld(entity.world.getRegistryKey()).removePlayer((ServerPlayerEntity) entity, Entity.RemovalReason.CHANGED_DIMENSION);
-                    //entity.removed = false;
-                    entity.refreshPositionAndAngles(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D, entity.getYaw(), entity.getPitch());
-                    //entity.setWorld(serverWorld);
-                    serverWorld.spawnEntity(entity);
                 }
                 // play sound in destination world
                 serverWorld.playSound(null, pos, SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 1, 1);

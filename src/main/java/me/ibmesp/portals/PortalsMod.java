@@ -1,5 +1,6 @@
 package me.ibmesp.portals;
 
+import me.ibmesp.portals.blocks.ModBlocks;
 import me.ibmesp.portals.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class PortalsMod implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
     }
 }
