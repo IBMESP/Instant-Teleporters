@@ -15,14 +15,18 @@ import net.minecraft.util.registry.Registry;
 public class ModBlocks {
 
     public static final Block ZIRCON_ORE = registerBlocks("zircon_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool()), ModItemGroup.PORTALS);
+    public static final Block DEEPSLATE_ZIRCON_ORE = registerBlocks("deepslate_zircon_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.PORTALS);
 
+    //Function that makes easier creation of Blocks
     private static Block registerBlocks(String name, Block block, ItemGroup group)
     {
         registerBlocksItem(name,block,group);
         return Registry.register(Registry.BLOCK, new Identifier(PortalsMod.MOD_ID, name), block);
     }
 
+    //Function that makes easier creation of Block items
     private static Item registerBlocksItem(String name, Block block, ItemGroup group){
         return Registry.register(Registry.ITEM,new Identifier(PortalsMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));

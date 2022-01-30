@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "portals:end_tp"
+    },
+    "title": "End Teleport",
+    "description":{
+      "translate": "portals.advancements.end_tp"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "portals:zircon/portals",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "portals:end_tp"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

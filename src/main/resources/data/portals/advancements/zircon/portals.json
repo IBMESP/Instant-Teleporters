@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "portals:zircon"
+    },
+    "title": "Zircon!",
+    "description":{
+      "translate": "portals.advancements.portals"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "portals:textures/block/zircon_ore.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "portals:zircon"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

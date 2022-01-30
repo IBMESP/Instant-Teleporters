@@ -6,14 +6,15 @@ import me.ibmesp.portals.item.custom.NetherTp;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     //Creation of items
     public static final Item NETHER_PORTAL = registerItem("nether_tp",
-            new NetherTp(new FabricItemSettings().group(ModItemGroup.PORTALS).maxCount(1)));
+            new NetherTp(new FabricItemSettings().group(ModItemGroup.PORTALS).maxCount(16).rarity(Rarity.EPIC)));
     public static final Item END_PORTAL = registerItem("end_tp",
-            new EndTp(new FabricItemSettings().group(ModItemGroup.PORTALS).maxCount(1)));
+            new EndTp(new FabricItemSettings().group(ModItemGroup.PORTALS).maxCount(16).rarity(Rarity.EPIC)));
     public static final Item ZIRCON = registerItem("zircon",
             new Item(new FabricItemSettings().group(ModItemGroup.PORTALS)));
 

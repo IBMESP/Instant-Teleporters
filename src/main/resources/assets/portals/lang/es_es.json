@@ -1,13 +1,19 @@
 {
   "portals.debug": "debug",
+  "portals.descriptionTranslation.modmenu": "Añade teleporters personales para viajar al Nether o al End",
 
-  "portals.notp": "§cNo puedes usar este objecto en esta dimensión",
+  "portals.notp": "§cNo puedes usar este teleporter en esta dimensión",
 
-  "itemGroup.portals.portals": "Portals Tab",
+  "itemGroup.portals.portals": "Instant Portals",
 
   "item.portals.end_tp": "End Teleport",
   "item.portals.nether_tp": "Nether Teleport",
   "item.portals.zircon": "Zircón",
 
-  "block.portals.zircon_ore" : "Mena de Zircón"
+  "block.portals.zircon_ore" : "Mena de zircón",
+  "block.portals.deepslate_zircon_ore" : "Mena de zircón de pizzara profunda",
+
+  "portals.advancements.portals": "Consigue zircón",
+  "portals.advancements.nether_tp": "Fabrica un Nether Teleporter",
+  "portals.advancements.end_tp": "Fabrica un End Teleporter"
 }

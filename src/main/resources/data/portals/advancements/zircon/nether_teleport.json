@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "portals:nether_tp"
+    },
+    "title": "Nether Teleport",
+    "description":{
+      "translate": "portals.advancements.nether_tp"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "portals:zircon/portals",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "portals:nether_tp"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

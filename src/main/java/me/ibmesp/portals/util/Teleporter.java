@@ -10,7 +10,6 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -44,7 +43,7 @@ public class Teleporter {
 
                 double movementFactor = 1;
                 if(item.equals(ModItems.NETHER_PORTAL)) {
-                    // One block in the nether is 8 blocks in the nether.
+                    // One block in the nether is 8 blocks in the overworld.
                     movementFactor = entity.world.getRegistryKey() == World.OVERWORLD ? 0.125d : 8;
                 }else if (item.equals(ModItems.END_PORTAL)) {
                     serverWorld = server.getWorld(entity.world.getRegistryKey() == World.OVERWORLD ? World.END : World.OVERWORLD);

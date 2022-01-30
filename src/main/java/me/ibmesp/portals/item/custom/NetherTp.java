@@ -11,19 +11,28 @@ import net.minecraft.world.World;
 
 public class NetherTp extends Item {
 
+    int cooldown = 0;
+
     public NetherTp(Settings settings) {
         super(settings);
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        ItemStack stack = user.getStackInHand(hand);
         if (user.world.getRegistryKey() == World.END)
         {
-            user.sendMessage(new TranslatableText("portals.notp"), false);
+            if(cooldown < 1){
+                user.sendMessage(new TranslatableText("portals.notp"), false);
+                cooldown++;
+            }else {
+                cooldown--;
+            }
         }else {
             Teleporter.teleport(user,hand);
+            stack.decrement(1);
+            user.getItemCooldownManager().set(this, 20);
         }
-        user.getItemCooldownManager().set(this, 20);
-        return super.use(world, user, hand);
+        return TypedActionResult.consume(stack);
     }
 }

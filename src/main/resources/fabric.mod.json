@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "icon": "assets/portals/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
       "me.ibmesp.portals.client.PortalsModClient"

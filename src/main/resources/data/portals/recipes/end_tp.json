@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GDG",
     "GOG",
-    "GDG"
+    "BDB",
+    "GOG"
   ],
   "key": {
     "G": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
     },
     "D": {
       "item": "minecraft:diamond"
