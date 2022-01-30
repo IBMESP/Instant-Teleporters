@@ -2,7 +2,6 @@
   "portals.debug": "debug",
   "portals.descriptionTranslation.modmenu": "Adds personal teleporters to travel to the Nether or the End",
 
-
   "portals.notp": "§cYou cant use the this teleporter on this dimension",
 
   "itemGroup.portals.portals": "Instant Portals",
