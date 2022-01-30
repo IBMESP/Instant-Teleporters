@@ -1,6 +1,5 @@
 package me.ibmesp.portals.mixin;
 
-import me.ibmesp.portals.PortalsMod;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,6 +1,6 @@
 package me.ibmesp.portals.world.features;
 
-import me.ibmesp.portals.PortalsMod;
+import me.ibmesp.portals.TeleporterMod;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -17,11 +17,11 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.aboveBottom(80)))));
 
     private static PlacedFeature registerPlacedFeature(String name, PlacedFeature placedFeature) {
-        return Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(PortalsMod.MOD_ID, name), placedFeature);
+        return Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(TeleporterMod.MOD_ID, name), placedFeature);
     }
 
     private static RegistryKey<PlacedFeature> registerKey(String name) {
-        return RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(PortalsMod.MOD_ID, name));
+        return RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(TeleporterMod.MOD_ID, name));
     }
 
 }

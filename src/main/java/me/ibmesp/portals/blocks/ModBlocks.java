@@ -1,6 +1,6 @@
 package me.ibmesp.portals.blocks;
 
-import me.ibmesp.portals.PortalsMod;
+import me.ibmesp.portals.TeleporterMod;
 import me.ibmesp.portals.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -23,12 +23,12 @@ public class ModBlocks {
     private static Block registerBlocks(String name, Block block, ItemGroup group)
     {
         registerBlocksItem(name,block,group);
-        return Registry.register(Registry.BLOCK, new Identifier(PortalsMod.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(TeleporterMod.MOD_ID, name), block);
     }
 
     //Function that makes easier creation of Block items
     private static Item registerBlocksItem(String name, Block block, ItemGroup group){
-        return Registry.register(Registry.ITEM,new Identifier(PortalsMod.MOD_ID, name),
+        return Registry.register(Registry.ITEM,new Identifier(TeleporterMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 

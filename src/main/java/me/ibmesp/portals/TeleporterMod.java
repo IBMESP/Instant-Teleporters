@@ -9,7 +9,7 @@ import net.fabricmc.api.ModInitializer;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-public class PortalsMod implements ModInitializer {
+public class TeleporterMod implements ModInitializer {
     public static final String MOD_ID = "portals";
     public static final Logger LOGGER = LogManager.getLogManager().getLogger(MOD_ID);
 

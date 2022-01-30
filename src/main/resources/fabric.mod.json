@@ -2,25 +2,25 @@
   "schemaVersion": 1,
   "id": "portals",
   "version": "${version}",
-  "name": "Instant Portals",
+  "name": "Instant Teleporters",
   "description": "Adds personal teleporters to travel to the Nether or the End",
   "authors": [
     "Ib"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/instantportals",
-    "sources": "https://github.com/IBMESP/Instant-Portals",
-    "issues": "https://github.com/IBMESP/Instant-Portals/issues"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/instant-teleporters",
+    "sources": "https://github.com/IBMESP/Instant-Teleporters",
+    "issues": "https://github.com/IBMESP/Instant-Teleporters/issues"
   },
   "license": "MIT",
   "icon": "assets/portals/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "me.ibmesp.portals.client.PortalsModClient"
+      "me.ibmesp.portals.client.TeleporterModClient"
     ],
     "main": [
-      "me.ibmesp.portals.PortalsMod"
+      "me.ibmesp.portals.TeleporterMod"
     ]
   },
   "mixins": [

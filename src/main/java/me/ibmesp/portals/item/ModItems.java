@@ -1,6 +1,6 @@
 package me.ibmesp.portals.item;
 
-import me.ibmesp.portals.PortalsMod;
+import me.ibmesp.portals.TeleporterMod;
 import me.ibmesp.portals.item.custom.EndTp;
 import me.ibmesp.portals.item.custom.NetherTp;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -20,7 +20,7 @@ public class ModItems {
 
     //Function to make easier the creation of items
     private static Item registerItem(String name, Item item){
-        return Registry.register(Registry.ITEM, new Identifier(PortalsMod.MOD_ID, name), item);
+        return Registry.register(Registry.ITEM, new Identifier(TeleporterMod.MOD_ID, name), item);
     }
 
     public static void registerModItems(){

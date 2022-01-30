@@ -1,6 +1,6 @@
 package me.ibmesp.portals.world.features;
 
-import me.ibmesp.portals.PortalsMod;
+import me.ibmesp.portals.TeleporterMod;
 import me.ibmesp.portals.blocks.ModBlocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -20,7 +20,7 @@ public class ModConfiguredFeatures {
             Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_ZIRCON_ORES, 4)));
 
     public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
-        return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(PortalsMod.MOD_ID, name),
+        return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(TeleporterMod.MOD_ID, name),
                 configuredFeature);
     }
 
