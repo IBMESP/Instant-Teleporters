@@ -42,11 +42,12 @@ public class Teleporter {
             if (serverWorld != null && server.isNetherAllowed()) {
 
                 double movementFactor = 1;
-                if(item.equals(ModItems.NETHER_PORTAL)) {
+                if(item.equals(ModItems.NETHER_PORTAL) || item.equals(ModItems.PERMA_NETHER_PORTAL)) {
                     // One block in the nether is 8 blocks in the overworld.
                     movementFactor = entity.world.getRegistryKey() == World.OVERWORLD ? 0.125d : 8;
-                }else if (item.equals(ModItems.END_PORTAL)) {
+                }else if (item.equals(ModItems.END_PORTAL) || item.equals(ModItems.PERMA_END_PORTAL)) {
                     serverWorld = server.getWorld(entity.world.getRegistryKey() == World.OVERWORLD ? World.END : World.OVERWORLD);
+
                     }
                 BlockPos pos = createDestinationSpawn(new BlockPos(entity.getPos().getX() * movementFactor, entity.getPos().getY(), entity.getPos().getZ() * movementFactor), serverWorld);
                 // play sound in origin world
@@ -69,6 +70,11 @@ public class Teleporter {
         int bestY = posY;
         int bestZ = posZ;
         BlockPos.Mutable mutable = new BlockPos.Mutable();
+
+        if (serverWorld.getRegistryKey() == World.END && posY <= 1){
+            bestY = 100;
+            posY = bestY;
+        }
 
         // Search for free space in a 16x128x16 box
         for (int xIndex = posX - 16; xIndex <= posX + 16; ++xIndex) {

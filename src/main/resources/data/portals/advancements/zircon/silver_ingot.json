@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "portals:silver_ingot"
+    },
+    "title": "Silver",
+    "description":{
+      "translate": "portals.advancements.silver"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "portals:zircon/nether_teleport",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "portals:silver_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

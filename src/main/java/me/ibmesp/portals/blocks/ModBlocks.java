@@ -18,6 +18,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool()), ModItemGroup.PORTALS);
     public static final Block DEEPSLATE_ZIRCON_ORE = registerBlocks("deepslate_zircon_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.PORTALS);
+    public static final Block SILVER_ORE = registerBlocks("silver_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(3f).requiresTool()), ModItemGroup.PORTALS);
+        public static final Block SILVER_BLOCK = registerBlocks("silver_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.PORTALS);
+    public static final Block RAW_SILVER_BLOCK = registerBlocks("raw_silver_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.PORTALS);
 
     //Function that makes easier creation of Blocks
     private static Block registerBlocks(String name, Block block, ItemGroup group)

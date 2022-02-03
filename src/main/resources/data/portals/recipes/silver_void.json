@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "SbS",
+    "CSC"
+  ],
+  "key": {
+    "S": {
+      "item": "portals:silver_block"
+    },
+    "b": {
+      "item": "minecraft:glass_bottle"
+    },
+    "C": {
+      "item": "minecraft:popped_chorus_fruit"
+    }
+  },
+  "result": {
+    "item": "portals:silver_void"
+  }
+}

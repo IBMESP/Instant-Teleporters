@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "portals:perma_end_tp"
+    },
+    "title": "End Teleport",
+    "description":{
+      "translate": "portals.advancements.perma_end_tp"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "portals:zircon/end_teleport",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "portals:perma_end_tp"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

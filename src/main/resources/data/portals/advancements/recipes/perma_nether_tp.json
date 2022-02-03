@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "portals:perma_nether_tp"
+    ]
+  },
+  "criteria": {
+    "has_zircon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "portals:nether_tp"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "portals:perma_nether_tp"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_zircon",
+      "has_the_recipe"
+    ]
+  ]
+}

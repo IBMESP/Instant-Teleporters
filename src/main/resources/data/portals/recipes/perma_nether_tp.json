@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GOG",
+    "BDB",
+    "GOG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "B": {
+      "item": "portals:silver_block"
+    },
+    "D": {
+      "item": "portals:nether_tp"
+    },
+    "O": {
+      "item": "portals:zircon"
+    }
+  },
+  "result": {
+    "item": "portals:perma_nether_tp"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GOG",
+    "BDB",
+    "GOG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "portals:silver_void"
+    },
+    "D": {
+      "item": "portals:end_tp"
+    },
+    "O": {
+      "item": "portals:zircon"
+    }
+  },
+  "result": {
+    "item": "portals:perma_end_tp"
+  }
+}

@@ -1,6 +1,7 @@
 package me.ibmesp.portals.world.features;
 
 import net.minecraft.world.gen.decorator.*;
+import net.minecraft.world.gen.heightprovider.VeryBiasedToBottomHeightProvider;
 
 import java.util.List;
 

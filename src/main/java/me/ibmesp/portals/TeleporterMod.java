@@ -2,6 +2,7 @@ package me.ibmesp.portals;
 
 import me.ibmesp.portals.blocks.ModBlocks;
 import me.ibmesp.portals.item.ModItems;
+import me.ibmesp.portals.util.ModLootTablesModifier;
 import me.ibmesp.portals.world.features.ModConfiguredFeatures;
 import me.ibmesp.portals.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
@@ -19,5 +20,6 @@ public class TeleporterMod implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModConfiguredFeatures.registerConfiguredFeatures();
         ModWorldGen.generateModWorldGen();
+        ModLootTablesModifier.modifyLootTables();
     }
 }

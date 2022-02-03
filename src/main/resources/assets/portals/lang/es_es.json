@@ -1,19 +1,30 @@
 {
   "portals.debug": "debug",
-  "portals.descriptionTranslation.modmenu": "Añade teleporters personales para viajar al Nether o al End",
+  "modmenu.descriptionTranslation.portals": "Añade teleporters personales para viajar al Nether o al End",
 
   "portals.notp": "§cNo puedes usar este teleporter en esta dimensión",
 
   "itemGroup.portals.portals": "Instant Teleporters",
 
-  "item.portals.end_tp": "End Teleport",
-  "item.portals.nether_tp": "Nether Teleport",
+  "item.portals.end_tp": "End Teleporter",
+  "item.portals.nether_tp": "Nether Teleporter",
   "item.portals.zircon": "Zircón",
+  "item.portals.perma_end_tp": "Perma End Teleporter",
+  "item.portals.perma_nether_tp": "Perma Nether Teleporter",
+  "item.portals.raw_silver": "Plata cruda",
+  "item.portals.silver_ingot": "Lingote de plata",
+  "item.portals.silver_void": "Plata vacia",
 
   "block.portals.zircon_ore" : "Mena de zircón",
   "block.portals.deepslate_zircon_ore" : "Mena de zircón de pizzara profunda",
+  "block.portals.silver_ore" : "Mena de plata",
+  "block.portals.raw_silver_block" : "Bloque de plata cruda",
+  "block.portals.silver_block" : "Bloque de plata",
 
   "portals.advancements.portals": "Consigue zircón",
   "portals.advancements.nether_tp": "Fabrica un Nether Teleporter",
-  "portals.advancements.end_tp": "Fabrica un End Teleporter"
+  "portals.advancements.end_tp": "Fabrica un End Teleporter",
+  "portals.advancements.perma_end_tp": "Fabrica un Perma End Teleporter",
+  "portals.advancements.perma_nether_tp": "Fabrica un Perma Nether Teleporter",
+  "portals.advancements.silver": "Funde un lingote de plata"
 }

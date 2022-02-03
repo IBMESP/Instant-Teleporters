@@ -1,19 +1,29 @@
 {
   "portals.debug": "debug",
-  "portals.descriptionTranslation.modmenu": "Adds personal teleporters to travel to the Nether or the End",
+  "modmenu.descriptionTranslation.portals": "Adds personal teleporters to travel to the Nether or the End",
 
-  "portals.notp": "§cYou cant use the this teleporter on this dimension",
+  "portals.notp": "§cYou cant use this teleporter on this dimension",
 
   "itemGroup.portals.portals": "Instant Teleporters",
-
-  "item.portals.end_tp": "End Teleport",
-  "item.portals.nether_tp": "Nether Teleport",
+  "item.portals.end_tp": "End Teleporter",
+  "item.portals.nether_tp": "Nether Teleportet",
   "item.portals.zircon": "Zircon",
+  "item.portals.perma_end_tp": "Perma End Teleporter",
+  "item.portals.perma_nether_tp": "Perma Nether Teleporter",
+  "item.portals.raw_silver": "Raw Silver",
+  "item.portals.silver_ingot": "Silver Ingot",
+  "item.portals.silver_void": "Silver Void",
 
-  "block.portals.zircon_ore" : "Zircon Ore",
-  "block.portals.deepslate_zircon_ore" : "Deepslate Zircon Ore",
+  "block.portals.zircon_ore": "Zircon Ore",
+  "block.portals.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.portals.silver_ore" : "Silver Ore",
+  "block.portals.raw_silver_block" : "Raw Silver Block",
+  "block.portals.silver_block" : "Silver Block",
 
   "portals.advancements.portals": "Acquire Zircon",
   "portals.advancements.nether_tp": "Craft a Nether Teleporter",
-  "portals.advancements.end_tp": "Craft a End Teleporter"
+  "portals.advancements.end_tp": "Craft a End Teleporter",
+  "portals.advancements.perma_end_tp": "Craft a Perma End Teleporter",
+  "portals.advancements.perma_nether_tp": "Craft a Perma Nether Teleporter",
+  "portals.advancements.silver": "Smelt a silver ingot"
 }

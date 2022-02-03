@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "portals:silver_block"
+    }
+  ],
+  "result": {
+    "item": "portals:silver_ingot",
+    "count": 9
+  }
+}
