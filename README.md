@@ -14,5 +14,5 @@
 <h5><strong>Ore Genration</strong></h5>
 <p><img src="https://i.imgur.com/UiVUVSk.png" alt="" width="287" height="700" /></p>
 <h4><strong>Crafting</strong></h4>
-<p><strong><img src="https://i.imgur.com/Jn3h8IT.png" alt="" width="1120" height="250" /></strong></p>
+<p><strong><img src="https://i.imgur.com/Jn3h8IT.png" alt="" width="825" height="184" /></strong></p>
 <p><strong>Instant Teleporters requires <a href="https://fabricmc.net/use/installer/">Fabric Loader</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a></strong></p>
