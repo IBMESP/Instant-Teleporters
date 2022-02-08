@@ -1,4 +1,6 @@
-<h2><strong>Features</strong></h2>
+<h2><strong>Instant Teleporters</strong></h2>
+Adds personal teleportes
+<h3><strong>Features</strong></h3>
 <h4><strong>Teleporters</strong></h4>
 <ul>
 <li>Nether Teleporter, teleports from overworld to the nether and vice versa</li>
