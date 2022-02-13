@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
+    //Creation of a group
     public static final ItemGroup PORTALS = FabricItemGroupBuilder.build(new Identifier(TeleporterMod.MOD_ID, "portals"),
             () -> new ItemStack(ModItems.ZIRCON));
 }

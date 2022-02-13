@@ -3,6 +3,7 @@
   "modmenu.descriptionTranslation.portals": "Añade teleporters personales para viajar al Nether o al End",
 
   "portals.notp": "§cNo puedes usar este teleporter en esta dimensión",
+  "portals.noexp": "§cNecesitas 5 niveles de experiencia",
 
   "itemGroup.portals.portals": "Instant Teleporters",
 

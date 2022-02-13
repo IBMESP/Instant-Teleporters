@@ -1,11 +1,10 @@
 package me.ibmesp.portals.item;
 
 import me.ibmesp.portals.TeleporterMod;
-import me.ibmesp.portals.item.custom.EndTp;
-import me.ibmesp.portals.item.custom.NetherTp;
-import me.ibmesp.portals.item.custom.PermaEndTp;
-import me.ibmesp.portals.item.custom.PermaNetherTp;
+import me.ibmesp.portals.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -32,7 +31,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.PORTALS)));
 
     public static final Item SILVER_VOID = registerItem("silver_void",
-            new Item(new FabricItemSettings().group(ModItemGroup.PORTALS)));
+            new SilverVoid(new FabricItemSettings().group(ModItemGroup.PORTALS)));
 
     //Function to make easier the creation of items
     private static Item registerItem(String name, Item item){

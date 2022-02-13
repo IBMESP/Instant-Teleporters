@@ -3,10 +3,11 @@
   "modmenu.descriptionTranslation.portals": "Adds personal teleporters to travel to the Nether or the End",
 
   "portals.notp": "§cYou cant use this teleporter on this dimension",
+  "portals.noexp": "§cYou need 5 exp levels",
 
   "itemGroup.portals.portals": "Instant Teleporters",
   "item.portals.end_tp": "End Teleporter",
-  "item.portals.nether_tp": "Nether Teleportet",
+  "item.portals.nether_tp": "Nether Teleporter",
   "item.portals.zircon": "Zircon",
   "item.portals.perma_end_tp": "Perma End Teleporter",
   "item.portals.perma_nether_tp": "Perma Nether Teleporter",
